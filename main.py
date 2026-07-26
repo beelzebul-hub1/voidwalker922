@@ -134,7 +134,7 @@ def export_points_loop():
             # send to website
             try:
                 requests.post(
-                    "https://render-b1yk.onrender.com/api/update",
+                    "https://render-1-ethy.onrender.com/api/update",
                     json=data,
                     timeout=10
                 )
@@ -156,9 +156,9 @@ threading.Thread(target=export_points_loop, daemon=True).start()
 # ---------------- RUN -----------------
 twitch_miner.mine(
     [
-        Streamer("imshayph"),
-        Streamer("waffletrades_"),
+        Streamer("shayph"),
         Streamer("sirdapper"),
+        Streamer("waffletrades_"),
     ],
     followers=False,
     followers_order=FollowersOrder.ASC
